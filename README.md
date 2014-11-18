@@ -17,4 +17,20 @@ You'll notice at the top of the file we use a number or reset properites.  We're
 
 
 ## Layout & Grid
-Our grid system is a 12-grid percentage based layout that spans the full 100% of its container. We have an ```.inner``` class that limits the width to 1024px.
+Our grid system is a 12-grid percentage based layout that spans the full 100% of its container. We have an ```.inner``` class that limits the width to 1024px if needed in the layout.
+
+### Example
+<div class="row>
+  <div class="span-2"></div>
+  <div class="span-2"></div>
+</div>
+
+
+## Basic Grid HTML
+```html
+<div class="row>
+  <div class="span-2"></div>
+  <div class="span-2"></div>
+</div>
+```
+
