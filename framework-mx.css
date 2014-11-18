@@ -1,0 +1,620 @@
+/* -----------------------------------------------
+  $Last Updated: 11/18/14 $mxg
+  
+  1. Defaults & Resets & Generics
+  2. Layout & Grid
+  3. Typography
+  4. lists
+  5. Generics
+  6. Tables
+  7. Buttons & Icons
+  8. Forms
+  9. Alerts
+  10. Custom Breaks for Devices (@media queries)
+------------------------------------------------ */
+
+
+/*1. Defaults & Resets & Generics
+======================================*/
+/* apply a natural box layout model to all elements */
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%
+}
+
+body{
+  font-family: Helvetica, Arial, sans-serif;
+  color: #444;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a:hover, a:active, a img{outline: none}
+
+a img{border:none;}
+
+img {
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+button, input, select, textarea {
+  font-size: 100%;
+  vertical-align: middle;
+  border:none;
+}
+
+button, input {
+  *overflow: visible;
+  line-height: normal;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+}
+
+button, html input[type="button"], input[type="reset"],input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+label,select,button,input[type="button"],input[type="reset"],input[type="submit"],input[type="radio"],input[type="checkbox"] {
+  cursor: pointer;
+}
+
+
+/* 2. Layout & Grid
+==========================*/
+.container{
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.inner{
+  width: 1024px;
+  margin:0 auto;
+}
+
+.inner-absolute{
+  width: 1024px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -512px;
+}
+
+.row {
+  width: 100%;
+  position:relative;
+}
+
+/* Clearfix */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  line-height: 0;
+}
+
+.row.bottom-spacing{margin-bottom: 20px}
+
+[class*='span-'] {
+  float: left;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+ 
+[class*='span-']:last-of-type {
+  padding-right: 0px;
+  float: right;
+  border-right: none;
+}
+
+/* Main Widths */
+.span-1  {width: 100%;}
+.span-2  {width: 50%;}
+.span-3  {width: 33.33%;}
+.span-4  {width: 25%;}
+.span-5  {width: 20%;}
+.span-6  {width: 16.6666666667%;}
+.span-7  {width: 14.2857142857%;}
+.span-8  {width: 12.5%;}
+.span-9  {width: 11.1111111111%;}
+.span-10 {width: 10%;}
+.span-11 {width: 9.09090909091%;}
+.span-12 {width: 8.33%;}
+
+.span-30 {width: 30%}
+.span-70 {width: 70%}
+.span-80 {width: 80%}
+
+/* 640 Video with side column */
+.span-640 {width: 64%}
+.span-360 {width: 36%}
+
+/* Gives us padding/margin to work with for content pieces */
+.content{
+  padding-bottom: 20px
+}
+.content-top{
+  margin-top: 20px
+}
+.content-spacing{
+  margin-top: 80px
+}
+
+/* 3. Typography
+==========================*/
+a{color: #438bc5; text-decoration: none; outline: none;}
+a:hover,a:focus {text-decoration: none; outline: none}
+
+.l{text-align: left}
+.r{text-align: right;}
+.c{text-align: center}
+.j{text-align: justify;}
+.upper{text-transform: uppercase;}
+.lower{text-transform: lowercase;}
+.lighter{font-weight: lighter;}
+.bold{font-weight: bold;}
+
+h1, .sevenxl{
+  line-height: 1
+}
+
+.mini{
+  font-size: 0.9rem
+}
+.small{
+  font-size: 1.0rem; 
+  line-height: 14px
+}
+.med{
+  font-size: 1.2rem; 
+  line-height: 1.6rem
+}
+.normal{
+  font-size: 1.4rem; 
+  line-height: 2rem
+}
+.large{
+  font-size:1.8rem; 
+  line-height: 24px; 
+  margin-bottom: 22px
+}
+.xl{
+  font-size: 2.4rem; 
+  line-height: 32px; 
+  margin-bottom: 15px
+}
+.xlt{
+  font-size: 3rem; 
+  line-height: 5rem; 
+}
+.xxl{
+  font-size: 3.6rem; 
+  line-height: 6rem; 
+  margin-bottom: 20px
+}
+.xxxl{
+  font-size: 4.8rem;
+  line-height: 7rem
+}
+.sixxl{
+  font-size: 6rem; 
+  line-height: 8rem.
+}
+.sevenxl{
+  font-size: 7.2rem; 
+}
+
+
+h1, h2, h3{ font-weight: bold;}
+h1{
+  font-size: 4.8rem; 
+  margin-bottom: 4rem
+}
+h2{
+  font-size: 3.6rem; 
+  line-height: 40px; 
+  margin-bottom: 3rem
+}
+h3{
+  font-size: 2.4rem; 
+  line-height: 4.4rem;
+  margin-bottom: 1.5rem
+}
+h4{
+  font-size: 2.1rem; 
+  font-weight: lighter;
+}
+h5{
+  font-size: 1.8rem; 
+  font-weight: bold
+}
+
+p, ul, ol{
+  font-size:1.4rem; 
+  line-height: 2rem; 
+  margin: 0 0 17px 0
+}
+
+ul, ol{
+  margin-left: 15px
+}
+
+address, cite{font-style: normal; line-height: 17px}
+blockquote{margin-left: 40px; padding-left: 20px; border-left: 4px solid #6BB4EA; font-style: italic;}
+
+
+
+/* 4. lists
+========================= */
+ul.inline, ol.inline{
+  margin:0 0 15px 0;
+  padding:0;
+  list-style-type: none;
+}
+ul.inline > li, ol.inline > li{
+  float:left;
+  margin-right: 20px;
+}
+ul.unstyled, ol.unstyled{
+  margin:0;
+  padding:0;
+  list-style-type: none;
+}
+ul.unstyled ul.unstyled, ol.unstyled ol.unstyled{margin: 0}
+ul.inline > li.end, ol.inline > li.end{margin:0;}
+ul.unstyled.vertical-list li{margin-bottom: 10px}
+
+/* 5. Generics 
+==================================*/
+
+/* Position */
+.align-right, [class*='span-']:last-of-type.align-right {float:right;}
+.align-left, [class*='span-']:last-of-type.align-left {float:left}
+.align-center{margin: 0 auto;}
+.clearfix{clear:both;}
+
+/*auto scale iframe to its container*/
+.flex-frame{ position: relative; overflow: hidden; max-width: 100%; height: 0; padding-bottom: 56.25%; padding-top: 30px;} 
+.flex-frame iframe, .flex-frame object, .flex-frame embed { position: absolute; top: 20px; left: 20px; width: 95%; height: 95%; }
+
+
+/*A better Show/Hide for JS*/
+.hide, .ng-hide, [class*="span-"].hide{
+  display: none !important;
+}
+
+.show, .ng-show, [class*="span-"].show{
+  display: block !important;
+}
+
+.no-float{
+  float:none !important;
+}
+.yes-overlfow{
+  overflow: visible;
+}
+/* Generics */
+.hide, .ng-hide{
+  display: none !important;
+}
+
+.show, .ng-show{
+  display: block !important;
+}
+
+[class*="span-"].hide, .hide {
+  display: none;
+}
+
+/*Paddings*/
+.pad{
+  padding:20px;
+}
+
+.no-pad{
+  padding:0;
+} /*we overrid this for mobile on span-* with .mobile-pad */
+
+.pad-top{
+  padding-top:20px;
+}
+.pad-bottom{
+  padding-bottom: 20px
+}
+
+.nomargin, ul.inline .nomargin, ol.inline .nomargin{margin:0;}
+
+/*image definitions*/
+.right-space{
+  margin-right: 20px
+}
+.left-space{
+  margin-left:20px;
+}
+.bottom-space{
+  margin-bottom: 20px
+}
+.top-space{
+  margin-top: 20px
+}
+img.stretchy{
+  position:fixed; 
+  width:100%; 
+  height: auto; 
+  top:0; 
+  left:0
+}
+.round{ border-radius: 100px}
+
+/* responseive images */
+img.flex-img{
+  width: 100%;
+}
+
+/* useful for on scrolling position change*/
+.is-sticky{
+  position: fixed;
+}
+
+/* Layout Generic Design */
+.box-line{
+  border: 1px solid #fff;
+}
+.left-line{
+  border-left:1px solid #fff;
+}
+.right-line{
+  border-right: 1px solid #fff
+}
+.bottom-line{
+  border-bottom: 1px solid #fff
+}
+.top-line{
+  border-top: 1px solid #fff
+}
+
+.light-grey-line{
+  border-color: #eee;
+}
+.grey-line{
+  border-color: #ddd
+}
+
+
+/* 6. Tables
+==========================*/
+table th, table td{padding: 10px;}
+thead th{font-weight: bold; text-align: left}
+table tr{border-bottom: 1px dotted #ccc}
+
+table tr[class*='span-'] {
+  float: none;
+  padding: 0px;
+  position: relative;
+}
+ 
+table tr[class*='span-']:last-of-type {
+  padding-right: 0px;
+  float: none;
+}
+
+tr.zebra{
+  background-color: #eee
+}
+
+/* 7. Buttons & Icons
+==========================*/
+.btn{
+  display: inline-block;
+  padding:8px 18px;
+  color:#fff;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin-left: 10px;
+  background: #7f8c8d;
+  text-align: center;
+  font-size: 1.4rem
+}
+
+.control-group.large .btn{
+  padding: 15px 20px;
+}
+.btn.small{padding:4px 9px; font-size: 10px}
+.btn.large-btn{padding:15px 80px; font-size: 1.8rem}
+.btn-first{margin:0;}
+.full-width-btn{
+  width: 100%;
+  padding-left:0;
+  padding-right:0;
+}
+
+.blue{
+  background: #2980b9;
+}
+.orange{
+background: #d35400
+}
+.green{
+  background: #27ae60;
+}
+.red{
+  background: #c0392b;
+}
+.grey{
+  background-color: #666
+}
+a.btn:hover,a.btn:focus {
+  text-decoration: none;
+}
+
+
+
+/* 8. Forms
+=======================================*/
+input, textarea, select, textarea{font: normal 13px Arial, Helvetica, sans-serif;}
+form{margin:0; padding:0;}
+input, textarea, select{
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    color: #555555;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 10px;
+    width: 200px;
+  vertical-align:middle;
+}
+
+input[type=radio], input[type=checkbox]{width:20px; padding:0; margin:0;}
+input, textarea {
+  -moz-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  -webkit-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+select {background-color: #FFFFFF; width: 200px;}
+
+input[type="file"] {height: auto; width: auto; padding: 0; border: none; box-shadow: none; -webkit-box-shaddow:none;}
+fieldset{margin:0; padding:0; display:block; border:none;}
+legend{
+  padding:0;
+  display:block;
+  font-size:24px;
+  line-height:34px;
+  margin:0px 0px 10px 0px;
+  color:#444;
+  width:100%;
+}
+legend + .control-group{margin-top:15px;}
+label{font-size:14px; padding-top:7px; display:block; color: #333;}
+
+/*Various control sizes*/
+.input-mini{width:50px;}
+.input-short{width:100px;}
+.input-med{width:150px;}
+.input-xlong{width:300px;}
+.input-xxlong{width:550px;}
+.input-full{width:1024px;}
+.input-full-width{width:100%;}
+.input-textarea {height: 200px;}
+
+/*Form structure*/
+.control-group{clear:both; margin-bottom:10px; display:table;}
+.control-label{float:left; width:140px; text-align:left;}
+.controls{margin-left:160px;}
+.help-inline, #content p.help-inline{display:inline-block; vertical-align:middle; margin:0px 0px 0px 10px; font-size:13px;}
+.help-text{   
+  clear: both;
+  float: left;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+input.error{
+  border:1px solid #953b39;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+}
+
+.form-left .control-label{margin-bottom: 5px}
+.form-left .controls{margin:0; clear: both}
+.form-left .btn{margin:0 10px 0 0;}
+.form-labelOver .control-group{position: relative;}
+.form-labelOver .control-label{position: absolute; left: 10px; top:3px; color:#ccc;}
+
+.form-center{margin:0 auto;}
+.form-small{width:400px;}
+.form-mini{width:300px;}
+.form-med{width:600px;}
+
+.form-full-width{width:100%}
+.form-full-width .control-group{width:100%}
+.form-full-width .short.control-group{width: 47%}
+
+.form-inline .control-group, .short.control-group{clear:none; float: left; position: relative;}
+.form-inline .controls{margin:0;}
+.form-inline .control-label{position: absolute; left:10px; top: 2px}
+
+.short.control-group{margin-right: 8px}
+.short.control-group .input-med{width:146px;}
+
+.control-group.large input{
+  padding:15px;
+  margin-bottom: 5px
+}
+.form-inline .control-group.large .control-label{
+  position: absolute; 
+  left:10px; 
+  top: 6px;
+  z-index: 999;
+}
+
+
+/* 9. Alerts 
+=====================*/
+.alert{
+  padding: 15px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+.alert.alert-warning{
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.alert.alert-error{
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+
+/* 10. Custom Breaks for Devices 
+=====================================*/
+@media (max-width: 1000px) {
+  .inner{width: 100%}
+}
+
+@media (max-width: 890px) {
+  .span-3  {width: 50%;}
+}
+
+@media (max-width: 820px) {
+  .span-2{width:100%;}
+  .span-4{width:50%;}
+  [class*='span-']:last-of-type, [class*='span-'].no-pad.mobile-pad {padding: 0 20px;}
+  .flex-frame iframe, .flex-frame object, .flex-frame embed { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; }
+}
+
+
+@media (max-width: 420px) {
+    h1, .xxxl{ font-size: 9vw;}
+}
+
+/* Phones */
+@media (max-width: 400px) {
+  /* Main Widths */
+  .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12  {width: 100%;}
+
+  /* 640 Video with side column */
+  .span-640, .span-360 {width: 100%}
+}
+
