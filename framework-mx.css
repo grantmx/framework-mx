@@ -1,9 +1,20 @@
 /* -----------------------------------------------
-  $Last Updated: 5/9/13 $mxg
+  $Last Updated: 11/18/14 $mxg
+  
+  1. Defaults & Resets & Generics
+  2. Layout & Grid
+  3. Typography
+  4. lists
+  5. Generics
+  6. Tables
+  7. Buttons & Icons
+  8. Forms
+  9. Alerts
+  10. Custom Breaks for Devices (@media queries)
 ------------------------------------------------ */
 
 
-/* Defaults & Resets & Generics
+/*1. Defaults & Resets & Generics
 ======================================*/
 /* apply a natural box layout model to all elements */
 *, *:after, *:before {
@@ -62,17 +73,8 @@ label,select,button,input[type="button"],input[type="reset"],input[type="submit"
   cursor: pointer;
 }
 
-.hide, .ng-hide{
-  display: none !important;
-}
 
-.show, .ng-show{
-  display: block !important;
-}
-
-
-
-/* Layout & Grid
+/* 2. Layout & Grid
 ==========================*/
 .container{
   margin-right: auto;
@@ -155,13 +157,7 @@ label,select,button,input[type="button"],input[type="reset"],input[type="submit"
   margin-top: 80px
 }
 
-/*auto scale iframe to its container*/
-.flex-frame{ position: relative; overflow: hidden; max-width: 100%; height: 0; padding-bottom: 56.25%; padding-top: 30px;} 
-.flex-frame iframe, .flex-frame object, .flex-frame embed { position: absolute; top: 20px; left: 20px; width: 95%; height: 95%; }
-
-
-
-/* Typography
+/* 3. Typography
 ==========================*/
 a{color: #438bc5; text-decoration: none; outline: none;}
 a:hover,a:focus {text-decoration: none; outline: none}
@@ -265,7 +261,7 @@ blockquote{margin-left: 40px; padding-left: 20px; border-left: 4px solid #6BB4EA
 
 
 
-/* lists
+/* 4. lists
 ========================= */
 ul.inline, ol.inline{
   margin:0 0 15px 0;
@@ -285,6 +281,8 @@ ul.unstyled ul.unstyled, ol.unstyled ol.unstyled{margin: 0}
 ul.inline > li.end, ol.inline > li.end{margin:0;}
 ul.unstyled.vertical-list li{margin-bottom: 10px}
 
+/* 5. Generics 
+==================================*/
 
 /* Position */
 .align-right, [class*='span-']:last-of-type.align-right {float:right;}
@@ -292,17 +290,35 @@ ul.unstyled.vertical-list li{margin-bottom: 10px}
 .align-center{margin: 0 auto;}
 .clearfix{clear:both;}
 
+/*auto scale iframe to its container*/
+.flex-frame{ position: relative; overflow: hidden; max-width: 100%; height: 0; padding-bottom: 56.25%; padding-top: 30px;} 
+.flex-frame iframe, .flex-frame object, .flex-frame embed { position: absolute; top: 20px; left: 20px; width: 95%; height: 95%; }
 
-/* Generics */
-[class*="span-"].hide, .hide {
-  display: none;
+
+/*A better Show/Hide for JS*/
+.hide, .ng-hide, [class*="span-"].hide{
+  display: none !important;
 }
 
-.no-float{float:none !important;}
-.pad{padding:20px;}
-.no-pad{padding:0;} /*we overrid this for mobile on span-* with .mobile-pad */
+.show, .ng-show, [class*="span-"].show{
+  display: block !important;
+}
 
-.yes-overlfow{overflow: visible;}
+.no-float{
+  float:none !important;
+}
+.yes-overlfow{
+  overflow: visible;
+}
+
+/*Paddings*/
+.pad{
+  padding:20px;
+}
+
+.no-pad{
+  padding:0;
+} /*we overrid this for mobile on span-* with .mobile-pad */
 
 .pad-top{
   padding-top:20px;
@@ -370,10 +386,7 @@ img.flex-img{
 }
 
 
-
-
-
-/*Tables
+/* 6. Tables
 ==========================*/
 table th, table td{padding: 10px;}
 thead th{font-weight: bold; text-align: left}
@@ -394,7 +407,7 @@ tr.zebra{
   background-color: #eee
 }
 
-/* Buttons & Icons
+/* 7. Buttons & Icons
 ==========================*/
 .btn{
   display: inline-block;
@@ -441,7 +454,7 @@ a.btn:hover,a.btn:focus {
 
 
 
-/* Forms
+/* 8. Forms
 =======================================*/
 input, textarea, select, textarea{font: normal 13px Arial, Helvetica, sans-serif;}
 form{margin:0; padding:0;}
@@ -542,7 +555,8 @@ input.error{
 }
 
 
-/* alerts */
+/* 9. Alerts 
+=====================*/
 .alert{
   padding: 15px;
   border-radius: 3px;
@@ -561,7 +575,8 @@ input.error{
 }
 
 
-/* Custom Breaks for Devices */
+/* 10. Custom Breaks for Devices 
+=====================================*/
 @media (max-width: 1000px) {
   .inner{width: 100%}
 }
