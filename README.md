@@ -1,6 +1,6 @@
 Framework MX
 ============
-Base simple responsive framework to rapidly build websites
+Base simple responsive framework to rapidly build websites.  This framework it ment to be simply a OCSS framework.  It provides all the basic OCSS one needs to set the foundation to a simple responisve site. With that said, you'll more than likley need to create additional stylesheets for the polish and custom styles one needs for a given project.
 
 ## Base HTML
 Framework MX uses HTML5 as its backbone.  We use a number of HTML5 elements that make our lives easier that require the HTML5 doctype.  Include it at the beginning of your projects.
