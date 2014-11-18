@@ -12,7 +12,7 @@ Framework MX uses HTML5 as its backbone.  We use a number of HTML5 elements that
 </html>
 ```
 
-## Normalize
+## Normalize and Reset
 You'll notice at the top of the file we use a number or reset properites.  We're using the best of normalize.css.  Although we're not using the whole file, we are using the best parts in our option.
 
 
