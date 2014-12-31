@@ -10,7 +10,8 @@
   7. Buttons & Icons
   8. Forms
   9. Alerts
-  10. Custom Breaks for Devices (@media queries)
+  10. Popover
+  11. Custom Breaks for Devices (@media queries)
 ------------------------------------------------ */
 
 
@@ -648,8 +649,102 @@ input.error{
   border-color: #ebccd1;
 }
 
+/* 10. Popovers - concept used from tw boostrap
+================================================*/
+.popover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  width: 216px;
+  padding: 10px;
+  text-align: left;
+  white-space: normal;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  color: #777
+}
 
-/* 10. Custom Breaks for Devices 
+.popover > .arrow, .popover > .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.popover > .arrow {
+  border-width: 11px;
+}
+.popover>.arrow:after {
+  content: "";
+  border-width: 10px;
+}
+
+
+.popover.right > .arrow:after {
+  bottom: -10px;
+  left: 1px;
+  content: " ";
+  border-left-width: 0;
+}
+.popover.right > .arrow {
+  top: 50%;
+  left: -11px;
+  margin-top: -11px;
+  border-right-color: #fff;
+  border-left-width: 0;
+}
+
+.popover.left > .arrow {
+  top: 50%;
+  right: -11px;
+  margin-top: -11px;
+  border-left-color: #fff;
+  border-right-width: 0;
+}
+.popover.left > .arrow:after {
+  bottom: -10px;
+  right: 1px;
+  content: " ";
+  border-left-width: 0;
+}
+
+.popover.top > .arrow {
+  left: 50%;
+  bottom: -11px;
+  margin-top: -11px;
+  border-top-color: #fff;
+  border-bottom-width: 0;
+}
+.popover.top > .arrow:after {
+  margin-left: -10px;
+  bottom: 1px;
+  content: " ";
+  border-top-width: 0;
+}
+
+.popover.bottom > .arrow {
+  left: 50%;
+  top: -11px;
+  margin-left: -11px;
+  border-bottom-color: #fff;
+  border-top-width: 0;
+}
+.popover.bottom > .arrow:after {
+  margin-left: -10px;
+  top: 1px;
+  content: " ";
+  border-top-width: 0;
+  border-bottom-color: #fff 
+}
+
+
+
+/* 11. Custom Breaks for Devices 
 =====================================*/
 @media (max-width: 1000px) {
   .inner{width: 100%}
