@@ -1,5 +1,5 @@
 /* -----------------------------------------------
-  $Last Updated: 11/18/14 $mxg
+  $Last Updated: 05/22/15 $mxg
   
   1. Defaults & Resets & Generics
   2. Layout & Grid
@@ -85,7 +85,7 @@ label,select,button,input[type="button"],input[type="reset"],input[type="submit"
 }
 
 .inner{
-  width: 1024px;
+  width: 1020px;
   margin:0 auto;
 }
 
@@ -132,6 +132,16 @@ label,select,button,input[type="button"],input[type="reset"],input[type="submit"
 .span-4-6 { width: 66.66666666666667%; }
 .span-5-6 { width: 83.33333333333333%; }
 
+.span-1-10 { width: 10%; }
+.span-2-10 { width: 20%; }
+.span-3-10 { width: 30%; }
+.span-4-10 { width: 40%; }
+.span-5-10 { width: 50%; }
+.span-6-10 { width: 60%; }
+.span-7-10 { width: 70%; }
+.span-8-10 { width: 80%; }
+.span-9-10 { width: 90%; }
+
 
 /* Mobile Landscape  */
 @media only screen and (min-width: 400px) {
@@ -156,6 +166,16 @@ label,select,button,input[type="button"],input[type="reset"],input[type="submit"
   .span-3-6-xs { width: 50%; }
   .span-4-6-xs { width: 66.66666666666667%; }
   .span-5-6-xs { width: 83.33333333333333%; }
+
+  .span-1-10-xs { width: 10%; }
+  .span-2-10-xs { width: 20%; }
+  .span-3-10-xs { width: 30%; }
+  .span-4-10-xs { width: 40%; }
+  .span-5-10-xs { width: 50%; }
+  .span-6-10-xs { width: 60%; }
+  .span-7-10-xs { width: 70%; }
+  .span-8-10-xs { width: 80%; }
+  .span-9-10-xs { width: 90%; }
 }
 
 
@@ -182,6 +202,16 @@ label,select,button,input[type="button"],input[type="reset"],input[type="submit"
   .span-3-6-sm { width: 50%; }
   .span-4-6-sm { width: 66.66666666666667%; }
   .span-5-6-sm { width: 83.33333333333333%; }
+
+  .span-1-10-sm { width: 10%; }
+  .span-2-10-sm { width: 20%; }
+  .span-3-10-sm { width: 30%; }
+  .span-4-10-sm { width: 40%; }
+  .span-5-10-sm { width: 50%; }
+  .span-6-10-sm { width: 60%; }
+  .span-7-10-sm { width: 70%; }
+  .span-8-10-sm { width: 80%; }
+  .span-9-10-sm { width: 90%; }
 }
 
 
@@ -208,6 +238,16 @@ label,select,button,input[type="button"],input[type="reset"],input[type="submit"
   .span-3-6-md { width: 50%; }
   .span-4-6-md { width: 66.66666666666667%; }
   .span-5-6-md { width: 83.33333333333333%; }
+
+  .span-1-10-md { width: 10%; }
+  .span-2-10-md { width: 20%; }
+  .span-3-10-md { width: 30%; }
+  .span-4-10-md { width: 40%; }
+  .span-5-10-md { width: 50%; }
+  .span-6-10-md { width: 60%; }
+  .span-7-10-md { width: 70%; }
+  .span-8-10-md { width: 80%; }
+  .span-9-10-md { width: 90%; }
 }
 
 
@@ -236,7 +276,19 @@ label,select,button,input[type="button"],input[type="reset"],input[type="submit"
   .span-3-6-lg { width: 50%; }
   .span-4-6-lg { width: 66.66666666666667%; }
   .span-5-6-lg { width: 83.33333333333333%; }
+
+  .span-1-10-lg { width: 10%; }
+  .span-2-10-lg { width: 20%; }
+  .span-3-10-lg { width: 30%; }
+  .span-4-10-lg { width: 40%; }
+  .span-5-10-lg { width: 50%; }
+  .span-6-10-lg { width: 60%; }
+  .span-7-10-lg { width: 70%; }
+  .span-8-10-lg { width: 80%; }
+  .span-9-10-lg { width: 90%; }
 }
+
+
 
 /* Desktop Wide */
 @media only screen and (min-width: 1400px) {
@@ -261,6 +313,16 @@ label,select,button,input[type="button"],input[type="reset"],input[type="submit"
   .span-3-6-xl { width: 50%; }
   .span-4-6-xl { width: 66.66666666666667%; }
   .span-5-6-xl { width: 83.33333333333333%; }
+
+  .span-1-10-xl { width: 10%; }
+  .span-2-10-xl { width: 20%; }
+  .span-3-10-xl { width: 30%; }
+  .span-4-10-xl { width: 40%; }
+  .span-5-10-xl { width: 50%; }
+  .span-6-10-xl { width: 60%; }
+  .span-7-10-xl { width: 70%; }
+  .span-8-10-xl { width: 80%; }
+  .span-9-10-xl { width: 90%; }
 }
 
 
@@ -449,6 +511,24 @@ ul.unstyled.vertical-list li{
   height: 95%; 
 }
 
+.flex-bg-img{
+  min-height: 100%;
+  min-width: 1020px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.flex-container-bg-img{
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #222;
+}
 
 /*A better Show/Hide for JS*/
 .hide, .ng-hide, [class*="span-"].hide{
@@ -479,19 +559,25 @@ ul.unstyled.vertical-list li{
 }
 
 /*Paddings*/
-.pad{
+.pad, [class*='span-']:last-of-type.pad{
   padding:20px;
 }
 
 .no-pad{
-  padding:0;
-} /*we overrid this for mobile on span-* with .mobile-pad */
+  padding:0 !important;
+}
 
 .pad-top{
   padding-top:20px;
 }
 .pad-bottom{
   padding-bottom: 20px
+}
+.pad-right{
+  padding-right: 20px;
+}
+.pad-left{
+  padding-left: 20px
 }
 
 .no-margin, ul.inline .no-margin, ol.inline .no-margin{
@@ -629,6 +715,9 @@ a.btn:hover,a.btn:focus {
   padding-left:0;
   padding-right:0;
 }
+.btn.transparent{
+    border: 1px solid #fff
+}
 
 /* Flat Bg Colors */
 .blue{
@@ -647,6 +736,9 @@ background: #d35400
   background-color: #666
 }
 
+.transparent{
+  background-color: transparent;
+}
 
 
 
@@ -718,6 +810,10 @@ input.error{
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
 }
 
+.short.control-group{padding-right: 8px}
+.short.control-group .input-med{width:146px;}
+.short.control-group:last-of-type{ padding-right:0 }
+
 .form-left .control-label{margin-bottom: 5px}
 .form-left .controls{margin:0; clear: both}
 .form-left .btn{margin:0 10px 0 0;}
@@ -731,14 +827,12 @@ input.error{
 
 .form-full-width{width:100%}
 .form-full-width .control-group{width:100%}
-.form-full-width .short.control-group{width: 47%}
+.form-full-width .short.control-group{width: 50%;}
 
 .form-inline .control-group, .short.control-group{clear:none; float: left; position: relative;}
 .form-inline .controls{margin:0;}
 .form-inline .control-label{position: absolute; left:10px; top: 2px}
-
-.short.control-group{margin-right: 8px}
-.short.control-group .input-med{width:146px;}
+.form-inline .btn{ padding: 12px 15px}
 
 .control-group.large input{
   padding:15px;
@@ -769,6 +863,11 @@ input.error{
   color: #a94442;
   background-color: #f2dede;
   border-color: #ebccd1;
+}
+.alert.alert-success{
+  color: #468847;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
 }
 
 /* 10. Popovers - concept used from tw boostrap
@@ -868,6 +967,14 @@ input.error{
 
 /* 11. Custom Breaks for Devices 
 =====================================*/
+
+@media (max-width: 1024px) {
+  .inner{
+    width: 100%;
+    margin: 0
+  }
+}
+
 @media (max-width: 820px) {
   .flex-frame iframe, .flex-frame object, .flex-frame embed { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; }
 }
