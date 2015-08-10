@@ -1,0 +1,57 @@
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%
+}
+
+body{
+  font-family: $font-stack;
+  color: $primary-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a:hover, a:active, a img{
+	outline: $border-off
+}
+
+a img{
+	border: $border-off;
+}
+
+img {
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+button, input, select, textarea {
+  font-size: 100%;
+  vertical-align: middle;
+  border: $border-off;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+}
+
+button, html input[type="button"], input[type="reset"],input[type="submit"] {
+  cursor: $default-cursor;
+  -webkit-appearance: button;
+}
+
+label,select,button,input[type="button"],input[type="reset"],input[type="submit"],input[type="radio"],input[type="checkbox"] {
+  cursor: $default-cursor;
+}
