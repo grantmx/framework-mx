@@ -7,7 +7,8 @@ $standard-padding: 2em;
 $standard-column-width: 100%;
 
 $hr-border: #ccc;
-$standard-border: 1px solid #fff;
+$standard-border: 1px solid transparent;
+$standard-border-radius: 3px;
 
 // colors
 $brand-primary: darken(#438bc5, 6.5%); // #337ab7

@@ -1,3 +1,12 @@
+// rounding
+.round{ 
+  border-radius: 100px
+}
+.rounded-corners{
+  border-radius: $standard-border-radius
+}
+
+
 // Position
 .align-right, [class*='span-']:last-of-type.align-right {
   float:right
@@ -12,30 +21,26 @@
   clear:both;
 }
 
+
 // dynamic show/hide
 .hide, .ng-hide, [class*="span-"].hide{
   display: none !important;
 }
-
 .show, .ng-show, [class*="span-"].show{
   display: block !important;
 }
-
 .no-float{
   float:none !important;
 }
 .yes-overlfow{
   overflow: visible;
 }
-
 .hide, .ng-hide{
   display: none !important;
 }
-
 .show, .ng-show{
   display: block !important;
 }
-
 [class*="span-"].hide, .hide {
   display: none;
 }
@@ -46,11 +51,9 @@
 .pad, [class*='span-']:last-of-type.pad{
   padding: $standard-padding;
 }
-
 .no-pad{
   padding:0 !important;
 }
-
 .pad-top{
   padding-top: $standard-padding;
 }
@@ -85,6 +88,7 @@
   margin-top: $standard-padding
 }
 
+// responseive images
 img.stretchy{
   position:fixed; 
   width:100%; 
@@ -92,14 +96,6 @@ img.stretchy{
   top:0; 
   left:0
 }
-.round{ 
-  border-radius: 100px
-}
-.rounded-corners{
-  border-radius: 3px
-}
-
-// responseive images
 img.flex-img{
   width: 100%;
 }
@@ -123,7 +119,6 @@ img.flex-img{
   width: 95%; 
   height: 95%; 
 }
-
 .flex-bg-img{
   min-height: 100%;
   min-width: $standard-width;
@@ -134,7 +129,6 @@ img.flex-img{
   left: 0;
   z-index: -1;
 }
-
 .flex-container-bg-img{
   background-attachment: fixed;
   background-position: center center;
@@ -144,7 +138,7 @@ img.flex-img{
 }
 
 
-/* useful for on scrolling position change*/
+// useful for on scrolling position change
 .is-sticky{
   position: fixed;
 }
