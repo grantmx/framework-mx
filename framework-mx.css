@@ -349,19 +349,13 @@ ul.unstyled.vertical-list li { margin-bottom: 1em; }
 
 .clearfix { clear: both; }
 
+.no-float { float: none !important; }
+
 .hide, .ng-hide, [class*="span-"].hide { display: none !important; }
 
 .show, .ng-show, [class*="span-"].show { display: block !important; }
 
-.no-float { float: none !important; }
-
 .yes-overlfow { overflow: visible; }
-
-.hide, .ng-hide { display: none !important; }
-
-.show, .ng-show { display: block !important; }
-
-[class*="span-"].hide, .hide { display: none; }
 
 .pad, [class*='span-']:last-of-type.pad { padding: 2em; }
 

@@ -20,6 +20,9 @@
 .clearfix{
   clear:both;
 }
+.no-float{
+  float:none !important;
+}
 
 
 // dynamic show/hide
@@ -29,20 +32,8 @@
 .show, .ng-show, [class*="span-"].show{
   display: block !important;
 }
-.no-float{
-  float:none !important;
-}
 .yes-overlfow{
   overflow: visible;
-}
-.hide, .ng-hide{
-  display: none !important;
-}
-.show, .ng-show{
-  display: block !important;
-}
-[class*="span-"].hide, .hide {
-  display: none;
 }
 
 
