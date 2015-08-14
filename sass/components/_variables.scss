@@ -6,8 +6,11 @@ $standard-width: 1020px;
 $standard-padding: 2em;
 $standard-column-width: 100%;
 
+$hr-border: #ccc;
+$standard-border: 1px solid #fff;
+
 // colors
-$brand-primary: darken(#428bca, 6.5%); // #337ab7
+$brand-primary: darken(#438bc5, 6.5%); // #337ab7
 $brand-success: #5cb85c;
 $brand-info: #5bc0de;
 $brand-warning: #f0ad4e;
@@ -27,11 +30,18 @@ $font-size-h4: $font-size-base + 0.7; // ~2.1em
 $font-size-h5: $font-size-base;
 $font-size-h6: $font-size-base - 0.2; // ~1.2em
 
-// Media Break Points
+$headings-font-family:    inherit !default;
+$headings-font-weight:    bold !default;
+$headings-line-height:    1 !default;
+$headings-color:          inherit !default;
+
+
+// Grid
 $grid-columns: 10 !default;
 
 $screen-xs: 400px; // mobile landscape
 $screen-sm: 568px; // tablet portrate
 $screen-md: 769px; // tablet landscape
 $screen-lg: 1020px; // Desktop
-$screen-xl: 1200px; // Large TV and Up
+$screen-xl: 1200px; // Large Desktop & HD TV
+

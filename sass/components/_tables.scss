@@ -1,0 +1,25 @@
+table th, table td{
+  padding: $standard-padding;
+}
+thead th{
+  font-weight: bold;
+  text-align: left
+}
+table tr{
+  border-bottom: 1px dotted #ccc
+}
+
+table tr[class*='span-'] {
+  float: none;
+  padding: 0px;
+  position: relative;
+}
+ 
+table tr[class*='span-']:last-of-type {
+  padding-right: 0px;
+  float: none;
+}
+
+tr.zebra{
+  background-color: #eee
+}

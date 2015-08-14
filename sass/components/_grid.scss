@@ -29,6 +29,17 @@
   float: right;
 }
 
+/* Gives us padding/margin to work with for content pieces */
+.content{
+  padding-bottom: $standard-padding
+}
+.content-top{
+  margin-top: $standard-padding
+}
+.content-spacing{
+  margin-top: $standard-padding * 4
+}
+
 
 /* Defaults ~ Mobile Portrait */
 @include make-default-grid;

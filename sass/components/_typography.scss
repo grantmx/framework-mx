@@ -1,0 +1,141 @@
+// Links
+a{
+	color: $brand-primary;
+	outline: none;
+	
+	&:hover, 
+	&:focus{ 
+		text-decoration: $border-off; 
+	}
+}
+
+// Justiied Text
+.l{text-align: left}
+.r{text-align: right;}
+.c{text-align: center}
+.j{text-align: justify;}
+
+// Text Transform
+.upper{text-transform: uppercase;}
+.lower{text-transform: lowercase;}
+
+// Text Weight
+.lighter{font-weight: lighter;}
+.bold{font-weight: bold;}
+
+
+// Accessory Font Sizes
+.mini{
+  $font-size: $font-size-small - 0.1;
+  font: #{$font-size}/#{$font-size + 0.6};
+}
+.small{
+  $font-size: $font-size-small - 0.2; 
+  font: #{$font-size}/#{$font-size + 0.6};
+}
+.med{
+  $font-size: $font-size-small; 
+  font: #{$font-size}/#{$font-size + 0.6};
+}
+.normal{
+  $font-size: $font-size-base; 
+  font: #{$font-size}/#{$font-size + 0.6};
+}
+.large{
+  $font-size: $font-size-large; 
+  font: #{$font-size}/#{$font-size + 0.6}; 
+  margin-bottom: $font-size + 0.6;
+}
+.xl{
+  $font-size: $font-size-h3; 
+  font: #{$font-size}/#{$font-size + 0.6};
+  margin-bottom: $font-size + 0.6;
+}
+.xxl{
+  $font-size: $font-size-h2; 
+  font: #{$font-size}/#{$font-size + 0.6};
+  margin-bottom: $font-size + 0.6;
+}
+.xxxl{
+  font-size: $font-size-h1;
+  line-height: 1;
+}
+.sixxl{
+  font-size: $font-size-small + 1.2; 
+  line-height: 1;
+}
+.sevenxl{
+  font-size: $font-size-small + 1;
+  line-height: 1
+}
+
+
+// Headings
+h1, h2, h3, h4, h5, h6{
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+}
+
+h1{ font-size: $font-size-h1; }
+h2{ font-size: $font-size-h2; }
+h3{ font-size: $font-size-h3; }
+h4{ font-size: $font-size-h4; }
+h5{ font-size: $font-size-h5; }
+h6{ font-size: $font-size-h6; }
+
+
+
+// Body Text
+p, ul, ol{
+  font-size: $font-size-base; 
+  line-height: $standard-padding; 
+  margin: 0 0 ($font-size-base + 0.6) 0
+}
+
+address, cite{
+  font-style: normal; 
+  line-height: $font-size-base + 0.6
+}
+
+blockquote{
+  margin-left: $standard-padding * 2; 
+  padding-left: $standard-padding; 
+  border-left: 4px solid #6BB4EA; 
+  font-style: italic;
+}
+
+
+// Lists
+@mixin list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+ul, ol{
+  margin-left: $standard-padding
+}
+
+ul.inline, ol.inline{
+  margin:0 0 $standard-padding 0;
+  @include list-unstyled;
+
+  > li{
+  	display: inline-block;
+  	margin-right: $standard-padding;
+  }
+
+  > li.end{
+  	 margin:0;
+  }
+}
+
+ul.unstyled, ol.unstyled, ul.unstyled ul.unstyled, ol.unstyled ol.unstyled{
+  margin:0;
+  @include list-unstyled;
+}
+
+ul.unstyled.vertical-list li{
+  margin-bottom: $standard-padding / 2;
+}

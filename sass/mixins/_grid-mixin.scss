@@ -1,3 +1,5 @@
+
+// calculates each grid column
 @mixin calc-grid-column($index, $class, $columns) {
 	@if ($index > 0) and ($class != null){
 
@@ -10,9 +12,9 @@
 			width: $standard-column-width / $columns * ($index);
 		}
 	}
-
 }
 
+// loops each column to serve calculating each grid column
 @mixin loop-grid-columns($columns, $class) {
 	@each $j in 1, 2, 3, 4, 5, 6, 10{
 		@for $i from 1 through $j {
@@ -26,7 +28,7 @@
 	@include loop-grid-columns($grid-columns, $class);
 }
 
-
+// makes the default grid type
 @mixin make-default-grid() {
 	@include loop-grid-columns($grid-columns, null);
 }

@@ -1,0 +1,176 @@
+// Position
+.align-right, [class*='span-']:last-of-type.align-right {
+  float:right
+}
+.align-left, [class*='span-']:last-of-type.align-left {
+  float:left
+}
+.align-center{
+  margin: 0 auto
+}
+.clearfix{
+  clear:both;
+}
+
+// dynamic show/hide
+.hide, .ng-hide, [class*="span-"].hide{
+  display: none !important;
+}
+
+.show, .ng-show, [class*="span-"].show{
+  display: block !important;
+}
+
+.no-float{
+  float:none !important;
+}
+.yes-overlfow{
+  overflow: visible;
+}
+
+.hide, .ng-hide{
+  display: none !important;
+}
+
+.show, .ng-show{
+  display: block !important;
+}
+
+[class*="span-"].hide, .hide {
+  display: none;
+}
+
+
+
+// Paddings
+.pad, [class*='span-']:last-of-type.pad{
+  padding: $standard-padding;
+}
+
+.no-pad{
+  padding:0 !important;
+}
+
+.pad-top{
+  padding-top: $standard-padding;
+}
+.pad-bottom{
+  padding-bottom: $standard-padding
+}
+.pad-right{
+  padding-right: $standard-padding;
+}
+.pad-left{
+  padding-left: $standard-padding
+}
+
+
+// margin
+.no-margin, ul.inline .no-margin, ol.inline .no-margin{
+  margin:0;
+}
+
+
+// image definitions 
+.right-space{
+  margin-right: $standard-padding
+}
+.left-space{
+  margin-left: $standard-padding
+}
+.bottom-space{
+  margin-bottom: $standard-padding
+}
+.top-space{
+  margin-top: $standard-padding
+}
+
+img.stretchy{
+  position:fixed; 
+  width:100%; 
+  height: auto; 
+  top:0; 
+  left:0
+}
+.round{ 
+  border-radius: 100px
+}
+.rounded-corners{
+  border-radius: 3px
+}
+
+// responseive images
+img.flex-img{
+  width: 100%;
+}
+
+
+
+// iframe
+// auto scale iframe to its container
+.flex-frame{ 
+  position: relative;
+  overflow: hidden; 
+  max-width: 100%; 
+  height: 0; 
+  padding-bottom: 56.25%; 
+  padding-top: $standard-padding;
+} 
+.flex-frame iframe, .flex-frame object, .flex-frame embed { 
+  position: absolute; 
+  top: $standard-padding; 
+  left: $standard-padding;
+  width: 95%; 
+  height: 95%; 
+}
+
+.flex-bg-img{
+  min-height: 100%;
+  min-width: $standard-width;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.flex-container-bg-img{
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #222;
+}
+
+
+/* useful for on scrolling position change*/
+.is-sticky{
+  position: fixed;
+}
+
+
+// Box Borders
+.box-line{
+  border: $standard-border
+}
+.left-line{
+  border-left: $standard-border
+}
+.right-line{
+  border-right: $standard-border
+}
+.bottom-line{
+  border-bottom: $standard-border
+}
+.top-line{
+  border-top: $standard-border
+}
+
+
+.light-grey-line{
+  border-color: #eee;
+}
+.grey-line{
+  border-color: #ddd
+}
