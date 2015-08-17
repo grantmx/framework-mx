@@ -4,24 +4,24 @@
 //mixins
 @import "mixins/_grid-mixin";
 
-// -----------------------------------------------
-//   $Last Updated: 08/14/15 $mxg
+/* -----------------------------------------------
+   $Last Updated: 08/14/15 $mxg
   
-//   1. Defaults & Resets & Generics
-//   2. Layout & Grid
-//   3. Typography
-//   4. Generics
-//   5. Tables
-//   6. Buttons & Icons
-//   7. Forms
-//   8. Alerts
-//   9. Popover
-//   10. Custom Breaks for Devices (@media queries)
-// ------------------------------------------------
+  1. Defaults & Resets & Generics
+  2. Layout & Grid
+  3. Typography
+  4. Generics
+  5. Tables
+  6. Buttons & Icons
+  7. Forms
+  8. Alerts
+  9. Popover
+  10. Custom Breaks for Devices (@media queries)
+------------------------------------------------ */
 
 
 /* 1. Defaults & Resets
-==========================*/
+========================== */
 @import "components/defaults";
 
 
@@ -43,3 +43,25 @@
 /* 5. Tables
 ==========================*/
 @import "components/tables";
+
+
+/* 6. Buttons & Icons
+==========================*/
+@import "components/buttons";
+
+
+/* 7. Forms
+==========================*/
+@import "components/forms";
+
+
+/* 9. Alerts 
+==========================*/
+@import "components/alerts";
+
+
+/* 10. Popovers
+==========================*/
+@import "components/popovers";
+
+
