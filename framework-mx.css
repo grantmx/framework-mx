@@ -1,23 +1,7 @@
-<<<<<<< HEAD
-/* -----------------------------------------------
-   $Last Updated: 08/15/15 $mxg
-  
-  1. Defaults & Resets & Generics
-  2. Layout & Grid
-  3. Typography
-  4. Generics
-  5. Tables
-  6. Buttons & Icons
-  7. Forms
-  8. Alerts
-  9. Popover
-  10. Custom Breaks for Devices (@media queries)
+/* ----------------------------------------------- $Last Updated: 08/17/15 $mxg  1. Defaults & Resets & Generics 2. Layout & Grid 3. Typography 4. Generics 5. Tables 6. Buttons & Icons 7. Forms 8. Alerts 9. Popover 10. Custom Breaks for Devices (@media queries)
 ------------------------------------------------ */
-
-=======
->>>>>>> origin/master
 /* 1. Defaults & Resets
-==========================*/
+========================== */
 *, *:after, *:before { margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 html { font-size: 62.5%; -webkit-tap-highlight-color: transparent; }
@@ -45,6 +29,7 @@ hr { margin-top: 4em; margin-bottom: 4em; border: 0; border-top: 1px solid #ccc;
 .grid { display: flex; flex-wrap: wrap; padding-right: 2em; padding-left: 2em; }
 
 .inner { width: 1020px; margin: 0 auto; }
+@media (max-width: 1024px) { .inner { width: 100%; margin: 0; } }
 
 .inner-absolute { width: 1020px; position: absolute; top: 0; left: 50%; margin-left: -510px; }
 
@@ -52,14 +37,12 @@ hr { margin-top: 4em; margin-bottom: 4em; border: 0; border-top: 1px solid #ccc;
 
 [class*='span-']:last-of-type { padding-right: 0em; float: right; }
 
-/* Gives us padding/margin to work with for content pieces */
 .content { padding-bottom: 2em; }
 
 .content-top { margin-top: 2em; }
 
 .content-spacing { margin-top: 8em; }
 
-/* Defaults ~ Mobile Portrait */
 .span-1-1 { width: 100%; }
 
 .span-1-2 { width: 50%; }
@@ -122,7 +105,6 @@ hr { margin-top: 4em; margin-bottom: 4em; border: 0; border-top: 1px solid #ccc;
 
 .span-10-10 { width: 100%; }
 
-/* Mobile Landscape  */
 @media only screen and (min-width: 400px) { .span-1-1-xs { width: 100%; }
   .span-1-2-xs { width: 50%; }
   .span-2-2-xs { width: 100%; }
@@ -154,7 +136,6 @@ hr { margin-top: 4em; margin-bottom: 4em; border: 0; border-top: 1px solid #ccc;
   .span-8-10-xs { width: 80%; }
   .span-9-10-xs { width: 90%; }
   .span-10-10-xs { width: 100%; } }
-/* Tablet Portrait */
 @media only screen and (min-width: 568px) { .span-1-1-sm { width: 100%; }
   .span-1-2-sm { width: 50%; }
   .span-2-2-sm { width: 100%; }
@@ -186,7 +167,6 @@ hr { margin-top: 4em; margin-bottom: 4em; border: 0; border-top: 1px solid #ccc;
   .span-8-10-sm { width: 80%; }
   .span-9-10-sm { width: 90%; }
   .span-10-10-sm { width: 100%; } }
-/* Tablet Landscape */
 @media only screen and (min-width: 769px) { .span-1-1-md { width: 100%; }
   .span-1-2-md { width: 50%; }
   .span-2-2-md { width: 100%; }
@@ -218,7 +198,6 @@ hr { margin-top: 4em; margin-bottom: 4em; border: 0; border-top: 1px solid #ccc;
   .span-8-10-md { width: 80%; }
   .span-9-10-md { width: 90%; }
   .span-10-10-md { width: 100%; } }
-/* Desktop */
 @media only screen and (min-width: 1020px) { .span-1-1-lg { width: 100%; }
   .span-1-2-lg { width: 50%; }
   .span-2-2-lg { width: 100%; }
@@ -250,7 +229,6 @@ hr { margin-top: 4em; margin-bottom: 4em; border: 0; border-top: 1px solid #ccc;
   .span-8-10-lg { width: 80%; }
   .span-9-10-lg { width: 90%; }
   .span-10-10-lg { width: 100%; } }
-/* Desktop Wide & HD TV */
 @media only screen and (min-width: 1200px) { .span-1-1-xl { width: 100%; }
   .span-1-2-xl { width: 50%; }
   .span-2-2-xl { width: 100%; }
@@ -404,6 +382,7 @@ img.flex-img { width: 100%; }
 .flex-frame { position: relative; overflow: hidden; max-width: 100%; height: 0; padding-bottom: 56.25%; padding-top: 2em; }
 
 .flex-frame iframe, .flex-frame object, .flex-frame embed { position: absolute; top: 2em; left: 2em; width: 95%; height: 95%; }
+@media (max-width: 769px) { .flex-frame iframe, .flex-frame object, .flex-frame embed { top: 0px; left: 0px; width: 100%; height: 100%; } }
 
 .flex-bg-img { min-height: 100%; min-width: 1020px; width: 100%; height: auto; position: fixed; top: 0; left: 0; z-index: -1; }
 
@@ -438,3 +417,140 @@ table tr[class*='span-'] { float: none; padding: 0px; position: relative; }
 table tr[class*='span-']:last-of-type { padding-right: 0px; float: none; }
 
 tr.zebra { background-color: #eee; }
+
+/* 6. Buttons & Icons
+==========================*/
+.btn { display: inline-block; padding: 8px 18px; color: #fff; border-radius: 3px; text-transform: uppercase; margin-left: 10px; margin-bottom: 0; background: #7f8c8d; text-align: center; vertical-align: middle; font-weight: lighter; font-size: 1.4em; cursor: pointer; }
+
+a.btn:hover, a.btn:focus { text-decoration: none; }
+
+a.btn.disabled, fieldset[disabled] a.btn { pointer-events: none; cursor: not-allowed; }
+
+.control-group.large .btn { padding: 15px 20px; }
+
+.btn.small { padding: 4px 9px; font-size: 1.2em; }
+
+.btn.large-btn { padding: 15px 80px; font-size: 1.8em; }
+
+.btn-first { margin: 0; }
+
+.full-width-btn { width: 100%; padding-left: 0; padding-right: 0; }
+
+.btn.transparent { border: 1px solid #fff; }
+
+.blue { background: #2980b9; }
+
+.orange { background: #d35400; }
+
+.green { background: #27ae60; }
+
+.red { background: #c0392b; }
+
+.grey { background-color: #666; }
+
+.transparent { background-color: transparent; }
+
+/* 7. Forms
+==========================*/
+input, textarea, select, textarea { font: normal 1.4em Helvetica, Arial, sans-serif; }
+
+form { margin: 0; padding: 0; }
+
+input, textarea, select { border: 1px solid #ccc; border-radius: 3px; color: #444; display: inline-block; font-size: 1.4em; line-height: 2em; padding: 1em; width: 200px; vertical-align: middle; }
+input.error, textarea.error, select.error { border: 1px solid #953b39; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392; }
+
+input[type=radio], input[type=checkbox] { width: 20px; padding: 0; margin: 0; }
+
+input, textarea { -moz-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; -webkit-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset; }
+
+select { background-color: #FFFFFF; width: 200px; }
+
+input[type="file"] { height: auto; width: auto; padding: 0; border: none; box-shadow: none; -webkit-box-shaddow: none; }
+
+fieldset { margin: 0; padding: 0; display: block; border: none; }
+
+legend { padding: 0; display: block; font-size: 2.4em; line-height: 3em; margin: 0 0 1em 0; color: #444; width: 100%; }
+legend + .control-group { margin-top: 15px; }
+
+label { font-size: 1.4em; padding-top: 7px; display: block; color: #444; }
+
+.input-mini { width: 50px; }
+
+.input-short { width: 100px; }
+
+.input-med { width: 150px; }
+
+.input-xlong { width: 300px; }
+
+.input-xxlong { width: 550px; }
+
+.input-full { width: 1024px; }
+
+.input-full-width { width: 100%; }
+
+.input-textarea { height: 200px; }
+
+.control-group { clear: both; margin-bottom: 2em; display: table; }
+.control-group.large input { padding: 2em; margin-bottom: 5px; }
+.control-group.short { padding-right: 8px; }
+.control-group.short .input-med { width: 146px; }
+.control-group.short:last-of-type { padding-right: 0; }
+
+.control-label { float: left; width: 140px; text-align: left; }
+
+.controls { margin-left: 160px; }
+
+.help-inline, #content p.help-inline { display: inline-block; vertical-align: middle; margin: 0 0 0 1em; font-size: 1.4em; }
+
+.help-text { clear: both; float: left; font-size: 1.4em; margin-top: 2em; }
+
+.form-center { margin: 0 auto; }
+
+.form-small { width: 400px; }
+
+.form-mini { width: 300px; }
+
+.form-med { width: 600px; }
+
+.form-left .control-label { margin-bottom: 5px; }
+.form-left .controls { margin: 0; clear: both; }
+.form-left .btn { margin: 0 1em 0 0; }
+
+.form-labelOver .control-group { position: relative; }
+.form-labelOver .control-label { position: absolute; left: 10px; top: 3px; color: #ccc; }
+
+.form-full-width { width: 100%; }
+.form-full-width .control-group { width: 100%; }
+.form-full-width .short.control-group { width: 50%; }
+
+.form-inline .control-group, .short.control-group { clear: none; float: left; position: relative; }
+
+.form-inline .controls { margin: 0; }
+
+.form-inline .control-label { position: absolute; left: 10px; top: 2px; }
+
+.form-inline .btn { padding: 12px 15px; }
+
+.form-inline .control-group.large .control-label { position: absolute; left: 10px; top: 6px; z-index: 999; }
+
+/* 9. Alerts 
+==========================*/
+.alert { padding: 15px; border-radius: 3px; margin-bottom: 20px; border: 1px solid #ccc; }
+.alert.alert-warning { color: #8a6d3b; background-color: #fcf8e3; border-color: #faebcc; }
+.alert.alert-error { color: #a94442; background-color: #f2dede; border-color: #ebccd1; }
+.alert.alert-success { color: #468847; background-color: #dff0d8; border-color: #d6e9c6; }
+
+/* 10. Popovers
+==========================*/
+.popover { position: absolute; top: 0; left: 0; z-index: 1060; width: 216px; padding: 1em; text-align: left; white-space: normal; background-color: #fff; -webkit-background-clip: padding-box; background-clip: padding-box; -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); color: #444; }
+.popover > .arrow, .popover > .arrow:after { position: absolute; display: block; width: 0; height: 0; border-color: transparent; border-style: solid; }
+.popover > .arrow { border-width: 11px; }
+.popover > .arrow:after { content: ""; border-width: 10px; }
+.popover.right > .arrow:after { bottom: -10px; content: " "; border-left-width: 0; left: 1px; }
+.popover.right > .arrow { top: 50%; right: -11px; margin-top: -11px; border-right-color: #fff; border-left-width: 0; }
+.popover.left > .arrow { top: 50%; right: -11px; margin-top: -11px; border-left-color: #fff; border-right-width: 0; }
+.popover.left > .arrow:after { bottom: -10px; content: " "; border-left-width: 0; right: 1px; }
+.popover.top > .arrow { top: 50%; right: -11px; margin-top: -11px; border-top-color: #fff; border-bottom-width: 0; }
+.popover.top > .arrow:after { margin-left: -10px; content: " "; border-top-width: 0; bottom: 1px; }
+.popover.bottom > .arrow { top: 50%; right: -11px; margin-top: -11px; border-bottom-color: #fff; border-top-width: 0; }
+.popover.bottom > .arrow:after { margin-left: -10px; content: " "; border-top-width: 0; top: 1px; }
