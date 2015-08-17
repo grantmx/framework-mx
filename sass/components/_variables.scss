@@ -31,10 +31,10 @@ $font-size-h4: $font-size-base + 0.7; // ~2.1em
 $font-size-h5: $font-size-base;
 $font-size-h6: $font-size-base - 0.2; // ~1.2em
 
-$headings-font-family:    inherit !default;
-$headings-font-weight:    bold !default;
-$headings-line-height:    1 !default;
-$headings-color:          inherit !default;
+$headings-font-family: inherit !default;
+$headings-font-weight: bold !default;
+$headings-line-height: 1 !default;
+$headings-color: inherit !default;
 
 
 // Grid
@@ -45,4 +45,7 @@ $screen-sm: 568px; // tablet portrate
 $screen-md: 769px; // tablet landscape
 $screen-lg: 1020px; // Desktop
 $screen-xl: 1200px; // Large Desktop & HD TV
+
+// buttons
+$btn-font-weight: lighter;
 

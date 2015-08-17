@@ -8,6 +8,13 @@
 .inner{
   width: $standard-width;
   margin:0 auto;
+
+  @media (max-width: ($screen-lg + 4)) {
+    &{
+      width: 100%;
+      margin: 0
+    }
+  }
 }
 
 .inner-absolute{
@@ -29,7 +36,7 @@
   float: right;
 }
 
-/* Gives us padding/margin to work with for content pieces */
+// Gives us padding/margin to work with for content pieces
 .content{
   padding-bottom: $standard-padding
 }
@@ -41,30 +48,30 @@
 }
 
 
-/* Defaults ~ Mobile Portrait */
+// Defaults ~ Mobile Portrait
 @include make-default-grid;
 
-/* Mobile Landscape  */
+// Mobile Landscape
 @media only screen and (min-width: $screen-xs) {
   @include make-grid(xs);
 }
 
-/* Tablet Portrait */
+// Tablet Portrait
 @media only screen and (min-width: $screen-sm) {
   @include make-grid(sm);
 }
 
-/* Tablet Landscape */
+// Tablet Landscape
 @media only screen and (min-width: $screen-md) {
   @include make-grid(md);
 }
 
-/* Desktop */
+// Desktop
 @media only screen and (min-width: $screen-lg) {
   @include make-grid(lg);
 }
 
-/* Desktop Wide & HD TV */
+// Desktop Wide & HD TV
 @media only screen and (min-width: $screen-xl) {
   @include make-grid(xl);
 }
