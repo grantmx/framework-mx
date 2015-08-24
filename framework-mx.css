@@ -922,33 +922,33 @@ a:hover, a:focus {
 }
 
 .mini {
-  font: 1.1em/1.7em;
+  font: 1.1em/1.7em Helvetica, Arial, sans-serif;
 }
 
 .small {
-  font: 1em/1.6em;
+  font: 1em/1.6em Helvetica, Arial, sans-serif;
 }
 
 .med {
-  font: 1.2em/1.8em;
+  font: 1.2em/1.8em Helvetica, Arial, sans-serif;
 }
 
 .normal {
-  font: 1.4em/2em;
+  font: 1.4em/2em Helvetica, Arial, sans-serif;
 }
 
 .large {
-  font: 1.8em/2.4em;
+  font: 1.8em/2.4em Helvetica, Arial, sans-serif;
   margin-bottom: 2.4em;
 }
 
 .xl {
-  font: 2.4em/3em;
+  font: 2.4em/1 Helvetica, Arial, sans-serif;
   margin-bottom: 3em;
 }
 
 .xxl {
-  font: 3.6em/4.2em;
+  font: 3.6em/1 Helvetica, Arial, sans-serif;
   margin-bottom: 4.2em;
 }
 
@@ -999,8 +999,6 @@ h6 {
 }
 
 p, ul, ol {
-  font-size: 1.4em;
-  line-height: 2em;
   margin: 0 0 2em 0;
 }
 
@@ -1261,7 +1259,6 @@ tr.zebra {
   text-align: center;
   vertical-align: middle;
   font-weight: lighter;
-  font-size: 1.4em;
   cursor: pointer;
 }
 

@@ -27,33 +27,33 @@ a{
 // Accessory Font Sizes
 .mini{
   $font-size: $font-size-small - 0.1;
-  font: #{$font-size}/#{$font-size + 0.6};
+  font: #{$font-size}/#{$font-size + 0.6} $font-stack;
 }
 .small{
   $font-size: $font-size-small - 0.2; 
-  font: #{$font-size}/#{$font-size + 0.6};
+  font: #{$font-size}/#{$font-size + 0.6} $font-stack;
 }
 .med{
   $font-size: $font-size-small; 
-  font: #{$font-size}/#{$font-size + 0.6};
+  font: #{$font-size}/#{$font-size + 0.6} $font-stack;
 }
 .normal{
   $font-size: $font-size-base; 
-  font: #{$font-size}/#{$font-size + 0.6};
+  font: #{$font-size}/#{$font-size + 0.6} $font-stack;
 }
 .large{
   $font-size: $font-size-large; 
-  font: #{$font-size}/#{$font-size + 0.6}; 
+  font: #{$font-size}/#{$font-size + 0.6} $font-stack; 
   margin-bottom: $font-size + 0.6;
 }
 .xl{
   $font-size: $font-size-h3; 
-  font: #{$font-size}/#{$font-size + 0.6};
+  font: #{$font-size}/1$font-stack;
   margin-bottom: $font-size + 0.6;
 }
 .xxl{
   $font-size: $font-size-h2; 
-  font: #{$font-size}/#{$font-size + 0.6};
+  font: #{$font-size}/1 $font-stack;
   margin-bottom: $font-size + 0.6;
 }
 .xxxl{
@@ -89,8 +89,6 @@ h6{ font-size: $font-size-h6; }
 
 // Body Text
 p, ul, ol{
-  font-size: $font-size-base; 
-  line-height: $standard-padding; 
   margin: 0 0 ($font-size-base + 0.6) 0
 }
 
