@@ -4,9 +4,8 @@
   color: #fff;
   border-radius: $standard-border-radius;
   text-transform: uppercase;
-  margin-left: 10px;
+  margin-left: $standard-padding / 2;
   margin-bottom: 0;
-  background: #7f8c8d;
   text-align: center;
   vertical-align: middle;
   font-weight: $btn-font-weight;
@@ -29,12 +28,12 @@ a.btn {
   padding: 15px 20px;
 }
 
-.btn.small{
+.btn-small{
   padding:4px 9px; 
   font-size: $font-size-small
 }
 
-.btn.large-btn{
+.btn-large{
   padding:15px 80px;
   font-size: $font-size-large
 }
@@ -43,35 +42,32 @@ a.btn {
   margin:0;
 }
 
-
-
-.full-width-btn{
+.btn-full-width{
   width: 100%;
   padding-left:0;
   padding-right:0;
 }
-.btn.transparent{
+.btn-transparent{
   border: 1px solid #fff
 }
 
 
 // colors
-.blue{
-  background: #2980b9;
+.blue, .btn-info{
+  background: $brand-info;
 }
-.orange{
-background: #d35400
+.orange, .btn-warning{
+  background: $brand-warning;
 }
-.green{
-  background: #27ae60;
+.green, .btn-success{
+  background: $brand-success;
 }
-.red{
-  background: #c0392b;
+.red, .btn-danger{
+  background: $brand-danger;
 }
-.grey{
+.grey, .btn{
   background-color: #666
 }
-
-.transparent{
+.transparent, .btn-transparent{
   background-color: transparent;
 }
