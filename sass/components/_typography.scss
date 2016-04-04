@@ -106,11 +106,6 @@ blockquote{
 
 
 // Lists
-@mixin list-unstyled {
-  padding-left: 0;
-  list-style: none;
-}
-
 ul, ol{
   margin-left: $standard-padding
 }

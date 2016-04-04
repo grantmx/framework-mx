@@ -1,5 +1,5 @@
 table th, table td{
-  padding: $standard-padding;
+  padding: $standard-padding - 0.5;
 }
 thead th{
   font-weight: bold;
@@ -20,6 +20,6 @@ table tr[class*='span-']:last-of-type {
   float: none;
 }
 
-tr.zebra{
+tr.zebra, tbody > tr:nth-of-type(odd){
   background-color: #eee
 }
