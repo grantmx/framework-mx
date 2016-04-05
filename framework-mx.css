@@ -29,7 +29,7 @@ html {
 
 body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.4em;
+  font-size: 1.4rem;
   color: #444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -73,8 +73,8 @@ label, select, button, input[type="button"], input[type="reset"], input[type="su
 }
 
 hr {
-  margin-top: 4em;
-  margin-bottom: 4em;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   border: 0;
   border-top: 1px solid #ccc;
 }
@@ -84,8 +84,6 @@ hr {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  padding-right: 2em;
-  padding-left: 2em;
 }
 
 .inner {
@@ -109,25 +107,25 @@ hr {
 
 [class*='span-'] {
   float: left;
-  padding: 2em;
+  padding: 2rem;
   position: relative;
 }
 
 [class*='span-']:last-of-type {
-  padding-right: 0em;
+  padding-right: 0rem;
   float: right;
 }
 
 .content {
-  padding-bottom: 2em;
+  padding-bottom: 2rem;
 }
 
 .content-top {
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 
 .content-spacing {
-  margin-top: 8em;
+  margin-top: 8rem;
 }
 
 .span-1-1 {
@@ -922,48 +920,48 @@ a:hover, a:focus {
 }
 
 .mini {
-  font: 1.1em/1.7em Helvetica, Arial, sans-serif;
+  font: 1.1rem/1.7rem Helvetica, Arial, sans-serif;
 }
 
 .small {
-  font: 1em/1.6em Helvetica, Arial, sans-serif;
+  font: 1rem/1.6rem Helvetica, Arial, sans-serif;
 }
 
 .med {
-  font: 1.2em/1.8em Helvetica, Arial, sans-serif;
+  font: 1.2rem/1.8rem Helvetica, Arial, sans-serif;
 }
 
 .normal {
-  font: 1.4em/2em Helvetica, Arial, sans-serif;
+  font: 1.4rem/2rem Helvetica, Arial, sans-serif;
 }
 
 .large {
-  font: 1.8em/2.4em Helvetica, Arial, sans-serif;
-  margin-bottom: 2.4em;
+  font: 1.8rem/2.4rem Helvetica, Arial, sans-serif;
+  margin-bottom: 2.4rem;
 }
 
 .xl {
-  font: 2.4em/1 Helvetica, Arial, sans-serif;
-  margin-bottom: 3em;
+  font: 2.4rem/1 Helvetica, Arial, sans-serif;
+  margin-bottom: 3rem;
 }
 
 .xxl {
-  font: 3.6em/1 Helvetica, Arial, sans-serif;
-  margin-bottom: 4.2em;
+  font: 3.6rem/1 Helvetica, Arial, sans-serif;
+  margin-bottom: 4.2rem;
 }
 
 .xxxl {
-  font-size: 4.8em;
+  font-size: 4.8rem;
   line-height: 1;
 }
 
 .sixxl {
-  font-size: 2.4em;
+  font-size: 2.4rem;
   line-height: 1;
 }
 
 .sevenxl {
-  font-size: 2.2em;
+  font-size: 2.2rem;
   line-height: 1;
 }
 
@@ -975,57 +973,58 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 4.8em;
+  font-size: 4.8rem;
 }
 
 h2 {
-  font-size: 3.6em;
+  font-size: 3.6rem;
 }
 
 h3 {
-  font-size: 2.4em;
+  font-size: 2.4rem;
 }
 
 h4 {
-  font-size: 2.1em;
+  font-size: 2.1rem;
 }
 
 h5 {
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 
 h6 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 p, ul, ol {
-  margin: 0 0 2em 0;
+  margin: 0 0 2rem;
+  line-height: 2rem;
 }
 
 address, cite {
   font-style: normal;
-  line-height: 2em;
+  line-height: 2rem;
 }
 
 blockquote {
-  margin-left: 4em;
-  padding-left: 2em;
+  margin-left: 4rem;
+  padding-left: 2rem;
   border-left: 4px solid #6BB4EA;
   font-style: italic;
 }
 
 ul, ol {
-  margin-left: 2em;
+  margin-left: 2rem;
 }
 
 ul.inline, ol.inline {
-  margin: 0 0 2em 0;
+  margin: 0 0 2rem 0;
   padding-left: 0;
   list-style: none;
 }
 ul.inline > li, ol.inline > li {
   display: inline-block;
-  margin-right: 2em;
+  margin-right: 2rem;
 }
 ul.inline > li.end, ol.inline > li.end {
   margin: 0;
@@ -1038,7 +1037,7 @@ ul.unstyled, ol.unstyled, ul.unstyled ul.unstyled, ol.unstyled ol.unstyled {
 }
 
 ul.unstyled.vertical-list li {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 /* 4. Generics 
@@ -1084,7 +1083,7 @@ ul.unstyled.vertical-list li {
 }
 
 .pad, [class*='span-']:last-of-type.pad {
-  padding: 2em;
+  padding: 2rem;
 }
 
 .no-pad {
@@ -1092,19 +1091,19 @@ ul.unstyled.vertical-list li {
 }
 
 .pad-top {
-  padding-top: 2em;
+  padding-top: 2rem;
 }
 
 .pad-bottom {
-  padding-bottom: 2em;
+  padding-bottom: 2rem;
 }
 
 .pad-right {
-  padding-right: 2em;
+  padding-right: 2rem;
 }
 
 .pad-left {
-  padding-left: 2em;
+  padding-left: 2rem;
 }
 
 .no-margin, ul.inline .no-margin, ol.inline .no-margin {
@@ -1112,19 +1111,19 @@ ul.unstyled.vertical-list li {
 }
 
 .right-space {
-  margin-right: 2em;
+  margin-right: 2rem;
 }
 
 .left-space {
-  margin-left: 2em;
+  margin-left: 2rem;
 }
 
 .bottom-space {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 .top-space {
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 
 img.stretchy {
@@ -1145,13 +1144,13 @@ img.flex-img {
   max-width: 100%;
   height: 0;
   padding-bottom: 56.25%;
-  padding-top: 2em;
+  padding-top: 2rem;
 }
 
 .flex-frame iframe, .flex-frame object, .flex-frame embed {
   position: absolute;
-  top: 2em;
-  left: 2em;
+  top: 2rem;
+  left: 2rem;
   width: 95%;
   height: 95%;
 }
@@ -1218,7 +1217,7 @@ img.flex-img {
 /* 5. Tables
 ==========================*/
 table th, table td {
-  padding: 2em;
+  padding: 1.5rem;
 }
 
 thead th {
@@ -1241,7 +1240,7 @@ table tr[class*='span-']:last-of-type {
   float: none;
 }
 
-tr.zebra {
+tr.zebra, tbody > tr:nth-of-type(odd) {
   background-color: #eee;
 }
 
@@ -1253,13 +1252,13 @@ tr.zebra {
   color: #fff;
   border-radius: 3px;
   text-transform: uppercase;
-  margin-left: 10px;
+  margin-left: 1rem;
   margin-bottom: 0;
-  background: #7f8c8d;
   text-align: center;
   vertical-align: middle;
   font-weight: lighter;
   cursor: pointer;
+  text-decoration: none;
 }
 
 a.btn:hover, a.btn:focus {
@@ -1275,58 +1274,58 @@ a.btn.disabled, fieldset[disabled] a.btn {
   padding: 15px 20px;
 }
 
-.btn.small {
+.btn-small {
   padding: 4px 9px;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
-.btn.large-btn {
+.btn-large {
   padding: 15px 80px;
-  font-size: 1.8em;
+  font-size: 1.8rem;
 }
 
 .btn-first {
   margin: 0;
 }
 
-.full-width-btn {
+.btn-full-width {
   width: 100%;
   padding-left: 0;
   padding-right: 0;
 }
 
-.btn.transparent {
+.btn-transparent {
   border: 1px solid #fff;
 }
 
-.blue {
-  background: #2980b9;
+.blue, .btn-info {
+  background: #5bc0de;
 }
 
-.orange {
+.orange, .btn-warning {
   background: #d35400;
 }
 
-.green {
-  background: #27ae60;
+.green, .btn-success {
+  background: #5cb85c;
 }
 
-.red {
-  background: #c0392b;
+.red, .btn-danger {
+  background: #d9534f;
 }
 
-.grey {
+.grey, .btn {
   background-color: #666;
 }
 
-.transparent {
+.transparent, .btn-transparent {
   background-color: transparent;
 }
 
 /* 7. Forms
 ==========================*/
 input, textarea, select, textarea {
-  font: normal 1.4em Helvetica, Arial, sans-serif;
+  font: normal 1.4rem Helvetica, Arial, sans-serif;
 }
 
 form {
@@ -1339,9 +1338,9 @@ input, textarea, select {
   border-radius: 3px;
   color: #444;
   display: inline-block;
-  font-size: 1.4em;
-  line-height: 2em;
-  padding: 1em;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding: 1rem;
   width: 200px;
   vertical-align: middle;
 }
@@ -1387,9 +1386,9 @@ fieldset {
 legend {
   padding: 0;
   display: block;
-  font-size: 2.4em;
-  line-height: 3em;
-  margin: 0 0 1em 0;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  margin: 0 0 1rem 0;
   color: #444;
   width: 100%;
 }
@@ -1398,7 +1397,7 @@ legend + .control-group {
 }
 
 label {
-  font-size: 1.4em;
+  font-size: 1.4rem;
   padding-top: 7px;
   display: block;
   color: #444;
@@ -1438,11 +1437,11 @@ label {
 
 .control-group {
   clear: both;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
   display: table;
 }
 .control-group.large input {
-  padding: 2em;
+  padding: 2rem;
   margin-bottom: 5px;
 }
 .control-group.short {
@@ -1451,7 +1450,7 @@ label {
 .control-group.short .input-med {
   width: 146px;
 }
-.control-group.short:last-of-type {
+.control-group.short:nth-of-type(even) {
   padding-right: 0;
 }
 
@@ -1468,15 +1467,15 @@ label {
 .help-inline, #content p.help-inline {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 0 0 1em;
-  font-size: 1.4em;
+  margin: 0 0 0 1rem;
+  font-size: 1.4rem;
 }
 
 .help-text {
   clear: both;
   float: left;
-  font-size: 1.4em;
-  margin-top: 2em;
+  font-size: 1.4rem;
+  margin-top: 2rem;
 }
 
 .form-center {
@@ -1503,7 +1502,7 @@ label {
   clear: both;
 }
 .form-left .btn {
-  margin: 0 1em 0 0;
+  margin: 0 1rem 0 0;
 }
 
 .form-labelOver .control-group {
@@ -1585,7 +1584,7 @@ label {
   left: 0;
   z-index: 1060;
   width: 216px;
-  padding: 1em;
+  padding: 1rem;
   text-align: left;
   white-space: normal;
   background-color: #fff;

@@ -98,7 +98,7 @@ label{
       width:146px;
     }
 
-    &:last-of-type{ 
+    &:nth-of-type(even){ 
       padding-right: 0 
     }
   }

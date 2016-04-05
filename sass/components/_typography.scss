@@ -89,7 +89,8 @@ h6{ font-size: $font-size-h6; }
 
 // Body Text
 p, ul, ol{
-  margin: 0 0 ($font-size-base + 0.6) 0
+  margin: 0 0 ($font-size-base + 0.6);
+  line-height: ($font-size-base + 0.6);
 }
 
 address, cite{
