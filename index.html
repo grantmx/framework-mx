@@ -46,7 +46,42 @@
 <h2>
 <a id="normalize-and-reset" class="anchor" href="#normalize-and-reset" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Normalize and Reset</h2>
 
-<p>You'll notice at the top of the file we use a number or reset properties. Although we're not using the whole file, we are using the best parts in our option.</p>
+<p>You'll notice at the top of the file we use a number or reset properties from Normalize.css, a project by Nicolas Gallagher and Jonathan Neal . Although we're not using the whole file, we are using the best parts for our needs in our option.</p>
+
+<h2>
+<a id="grid-system" class="anchor" href="#grid-system" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Grid System</h2>
+
+<p>The grid system for Framework MX using a 10 column percentage based system making a 1020 px default width container.</p>
+
+<h3>
+<a id="basic-grid" class="anchor" href="#basic-grid" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Basic grid</h3>
+
+<p>For a simple two column layout create a <code>.grid</code> as the top most parent element to ensure your flex grid and add the a number of <code>span-*-*</code> columns inside depending on the number of columns desired.  The syntax span 1 of 2 means that this column spans or is column 1 of 2 total columns.</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>grid<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>span-1-2<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>span-1-2<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h2>
+<a id="responsive" class="anchor" href="#responsive" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Responsive</h2>
+
+<p>Framework MX supports a number of media queries to support varying device widths and resolutions.</p>
+
+<div class="highlight highlight-source-css"><pre>// Mobile Landscape
+<span class="pl-k">@media</span> <span class="pl-k">only</span> <span class="pl-c1">screen</span> <span class="pl-k">and</span> (<span class="pl-c1">min-width</span>: <span class="pl-c1">400<span class="pl-k">px</span></span>) { ... }
+
+// Tablet Portrait
+<span class="pl-k">@media</span> <span class="pl-k">only</span> <span class="pl-c1">screen</span> <span class="pl-k">and</span> (<span class="pl-c1">min-width</span>: <span class="pl-c1">568<span class="pl-k">px</span></span>) { ... }
+
+// Tablet Landscape
+<span class="pl-k">@media</span> <span class="pl-k">only</span> <span class="pl-c1">screen</span> <span class="pl-k">and</span> (<span class="pl-c1">min-width</span>: <span class="pl-c1">769<span class="pl-k">px</span></span>) { ... }
+
+// Desktop
+<span class="pl-k">@media</span> <span class="pl-k">only</span> <span class="pl-c1">screen</span> <span class="pl-k">and</span> (<span class="pl-c1">min-width</span>: <span class="pl-c1">1020<span class="pl-k">px</span></span>) { ... }
+
+// Desktop Wide &amp; HD TV
+<span class="pl-k">@media</span> <span class="pl-k">only</span> <span class="pl-c1">screen</span> <span class="pl-k">and</span> (<span class="pl-c1">min-width</span>: <span class="pl-c1">1200<span class="pl-k">px</span></span>) { ... }</pre></div>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/grantmx">grantmx</a></p>
