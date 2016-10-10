@@ -1,0 +1,75 @@
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inner{
+  width: $standard-width;
+  margin:0 auto;
+
+  @media (max-width: ($screen-lg + 4)) {
+    &{
+      width: 100%;
+      margin: 0
+    }
+  }
+}
+
+.inner-absolute{
+  width: $standard-width;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -$standard-width / 2;
+}
+
+[class*='span-'] {
+  float: left;
+  padding: $standard-padding;
+  position: relative;
+}
+ 
+[class*='span-']:last-of-type {
+  padding-right: $standard-padding - 2;
+  float: right;
+}
+
+// Gives us padding/margin to work with for content pieces
+.content{
+  padding-bottom: $standard-padding
+}
+.content-top{
+  margin-top: $standard-padding
+}
+.content-spacing{
+  margin-top: $standard-padding * 4
+}
+
+
+// Defaults ~ Mobile Portrait
+@include make-default-grid;
+
+// Mobile Landscape
+@media only screen and (min-width: $screen-xs) {
+  @include make-grid(xs);
+}
+
+// Tablet Portrait
+@media only screen and (min-width: $screen-sm) {
+  @include make-grid(sm);
+}
+
+// Tablet Landscape
+@media only screen and (min-width: $screen-md) {
+  @include make-grid(md);
+}
+
+// Desktop
+@media only screen and (min-width: $screen-lg) {
+  @include make-grid(lg);
+}
+
+// Desktop Wide & HD TV
+@media only screen and (min-width: $screen-xl) {
+  @include make-grid(xl);
+}

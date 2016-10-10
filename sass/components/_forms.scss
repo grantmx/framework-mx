@@ -1,0 +1,186 @@
+input, textarea, select, textarea{font: normal $font-size-base $font-stack;}
+
+form{margin:0; padding:0;}
+
+input, textarea, select{
+  border: 1px solid #ccc;
+  border-radius: $standard-border-radius;
+  color: $primary-color;
+  display: inline-block;
+  font-size: $font-size-base;
+  line-height: $font-size-base + 0.6;
+  padding: $standard-padding / 2;
+  width: 200px;
+  vertical-align:middle;
+
+  &.error{
+    border: 1px solid #953b39;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+  }
+}
+
+input[type=radio], input[type=checkbox]{width:20px; padding:0; margin:0;}
+
+input, textarea {
+  -moz-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  -webkit-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+select {background-color: #FFFFFF; width: 200px;}
+
+input[type="file"] {
+  height: auto; 
+  width: auto; 
+  padding: 0; 
+  border: none; 
+  box-shadow: none; 
+  -webkit-box-shaddow: none;
+}
+
+fieldset{
+  margin: 0; 
+  padding: 0; 
+  display: block; 
+  border: none;
+}
+
+legend{
+  padding: 0;
+  display: block;
+  font-size: $font-size-h3;
+  line-height: $font-size-h3 + 0.6;
+  margin: 0 0 ($standard-padding / 2) 0;
+  color: $primary-color;
+  width: 100%;
+
+  &  + .control-group{
+    margin-top:15px;
+  }
+}
+
+
+label{
+  font-size: $font-size-base; 
+  padding-top: 7px; 
+  display: block; 
+  color: $primary-color;
+}
+
+// Various control sizes
+.input-mini{width:50px;}
+.input-short{width:100px;}
+.input-med{width:150px;}
+.input-xlong{width:300px;}
+.input-xxlong{width:550px;}
+.input-full{width:1024px;}
+.input-full-width{width:100%;}
+.input-textarea {height: 200px;}
+
+
+
+// Form structure
+.control-group{
+  clear: both; 
+  margin-bottom: $standard-padding; 
+  display: table;
+
+  &.large input{
+    padding: $standard-padding;
+    margin-bottom: 5px
+  }
+
+  &.short{
+    padding-right: 8px;
+
+    & .input-med{
+      width:146px;
+    }
+
+    &:nth-of-type(even){ 
+      padding-right: 0 
+    }
+  }
+}
+
+.control-label{
+  float: left; 
+  width: 140px; 
+  text-align: left;
+}
+
+.controls{
+  margin-left:160px;
+}
+
+
+// help text
+.help-inline, #content p.help-inline{
+  display: inline-block; 
+  vertical-align: middle; 
+  margin:0 0 0 ($standard-padding / 2); 
+  font-size: $font-size-base;
+}
+
+.help-text{   
+  clear: both;
+  float: left;
+  font-size: $font-size-base;;
+  margin-top: $standard-padding;
+}
+
+
+
+// form types
+.form-center{margin:0 auto;}
+.form-small{width: 400px;}
+.form-mini{width: 300px;}
+.form-med{width: 600px;}
+
+.form-left{
+  & .control-label{
+    margin-bottom: 5px
+  }
+
+  & .controls{
+    margin:0; 
+    clear: both
+  }
+
+  & .btn{
+    margin:0 ($standard-padding / 2) 0 0;
+  }
+}
+
+.form-labelOver{
+  & .control-group{
+    position: relative;
+  }
+
+  & .control-label{
+    position: absolute; 
+    left: 10px; 
+    top: 3px; 
+    color: #ccc;
+  }
+}
+
+
+.form-full-width {
+  width:100%;
+  & .control-group{width:100%}
+  & .short.control-group{width: 50%;}
+}
+
+
+.form-inline .control-group, .short.control-group{clear:none; float: left; position: relative;}
+.form-inline .controls{margin:0;}
+.form-inline .control-label{position: absolute; left:10px; top: 2px}
+.form-inline .btn{ padding: 12px 15px}
+.form-inline .control-group.large .control-label{
+  position: absolute; 
+  left:10px; 
+  top: 6px;
+  z-index: 999;
+}

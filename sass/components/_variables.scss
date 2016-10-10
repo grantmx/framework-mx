@@ -1,0 +1,51 @@
+$primary-color: #444;
+$default-cursor: pointer;
+$border-off: none;
+
+$standard-width: 1020px;
+$standard-padding: 2rem;
+$standard-column-width: 100%;
+
+$hr-border: #ccc;
+$standard-border: 1px solid transparent;
+$standard-border-radius: 3px;
+
+// colors
+$brand-primary: darken(#438bc5, 6.5%); // #337ab7
+$brand-success: #5cb85c;
+$brand-info: #5bc0de;
+$brand-warning: #d35400;
+$brand-danger: #d9534f;
+
+// Typography
+$font-stack: Helvetica, Arial, sans-serif;
+
+$font-size-base: 1.4rem;
+$font-size-large: $font-size-base + 0.4;  // ~1.8rem
+$font-size-small: $font-size-base - 0.2; // ~1.2rem
+
+$font-size-h1: $font-size-base + 3.4; // ~4.8rem
+$font-size-h2: $font-size-base + 2.2; // ~3.6rem
+$font-size-h3: $font-size-base + 1; // ~2.4rem
+$font-size-h4: $font-size-base + 0.7; // ~2.1rem
+$font-size-h5: $font-size-base;
+$font-size-h6: $font-size-base - 0.2; // ~1.2rem
+
+$headings-font-family: inherit !default;
+$headings-font-weight: bold !default;
+$headings-line-height: 1 !default;
+$headings-color: inherit !default;
+
+
+// Grid
+$grid-columns: 10 !default;
+
+$screen-xs: 400px; // mobile landscape
+$screen-sm: 568px; // tablet portrate
+$screen-md: 769px; // tablet landscape
+$screen-lg: 1020px; // Desktop
+$screen-xl: 1200px; // Large Desktop & HD TV
+
+// buttons
+$btn-font-weight: lighter;
+
